@@ -135,10 +135,32 @@ layouts = [
     # layout.Zoomy(),
 ]
 
+# COLORS FOR THE BAR
+colors = [
+    ["#141417", "#141417"],  # ACTIVE WORKSPACES 0
+    ["#6A6A6A", "#6A6A6A"],  # INACTIVE WORKSPACES 1
+    #["#384149", "#384149"],  # background lighter 2
+    ["#ff0000", "#ff0000"],  # background lighter 2
+    ["#FF8080", "#FF8080"],  # red 3
+    ["#97D59B", "#97D59B"],  # green 4
+    ["#FFFE80", "#FFFE80"],  # yellow 5
+    ["#80D1FF", "#80D1FF"],  # blue 6
+    ["#C780FF", "#C780FF"],  # magenta 7
+    ["#80FFE4", "#80FFE4"],  # cyan 8
+    ["#D5D5D5", "#D5D5D5"],  # white 9
+    ["#4c566a", "#4c566a"],  # grey 10
+    ["#d08770", "#d08770"],  # orange 11
+    ["#8fbcbb", "#8fbcbb"],  # super cyan12
+    ["#181E23", "#0E131A"],  # super blue 13
+    #["#181e23", "#181e23"],  # super dark background 14
+    ["#ffffff", "#ffffff"],  # super dark background 14
+]
+
 widget_defaults = dict(
-    font='sans',
+    font='novamono for powerline bold',
     fontsize=12,
     padding=3,
+    background=colors[14],
 )
 extension_defaults = widget_defaults.copy()
 
@@ -146,8 +168,30 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
+                widget.Sep(
+                    linewidth = 1,
+                    padding = 10,
+                    foreground = colors[14],
+                    background = colors[14]
+                ),
+                widget.GroupBox(font="FontAwesome",
+                        fontsize = 13,
+                        margin_y = 3,
+                        margin_x = 2,
+                        padding_y = 5,
+                        padding_x = 4,
+                        borderwidth = 5,
+                        disable_drag = True,
+                        active = colors[0],
+                        inactive = colors[1],
+                        rounded = True,
+                        highlight_method = "block",
+                        highlight_color = colors[1],
+                        this_screen_border = colors[1],
+                        this_current_screen_border = colors[2],
+                        foreground = colors[1],
+                        background = colors[14]
+                ),
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Chord(
