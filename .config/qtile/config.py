@@ -153,8 +153,9 @@ colors = [
     ["#d08770", "#d08770"],  # orange 11
     ["#8fbcbb", "#8fbcbb"],  # super cyan12
     ["#181E23", "#0E131A"],  # super blue 13
-    #["#181e23", "#181e23"],  # super dark background 14
-    ["#ffffff", "#ffffff"],  # super dark background 14
+    #["#ffffff", "#ffffff"],  # super dark background 14
+    #["ececef", "ececef"],  # super dark background 14
+    ["#8e8f90", "#8e8f90"],  # super dark background 14
 ]
 
 widget_defaults = dict(
@@ -325,6 +326,19 @@ screens = [
                     background = colors[3],
                     foreground = colors[14],
                     padding = 0
+                ),
+                # orbed
+                widget.TextBox(
+                    text = "",
+                    font = "Iosevka_Nerd_Font",
+                    fontsize = 23,
+                    background = colors[14],
+                    foreground = colors[8],
+                    padding = 0
+                ),
+                widget.QuickExit(
+                    background = colors[8],
+                    foreground = colors[14],
                 ),
             ],
             22,
