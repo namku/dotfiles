@@ -327,8 +327,13 @@ screens = [
                     padding = 0
                 ),
             ],
-            24,
+            22,
+            margin=[13, 15, 5, 15],
+            opacity=1.0,
         ),
+        bottom=bar.Gap(15),
+        left=bar.Gap(15),
+        right=bar.Gap(15),
     ),
 ]
 
