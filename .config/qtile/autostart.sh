@@ -1,6 +1,6 @@
 #!/usr/bin/env bash 
 
-picom &
+picom --experimental-backend &
 volumeicon &
 nm-applet &
-feh --bg-fill ~/Images/wallpapers/current-wallpaper.jpg
+feh --bg-fill ~/Images/wallpapers/current-wallpaper.jpg &
