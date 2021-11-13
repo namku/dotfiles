@@ -192,19 +192,139 @@ screens = [
                         foreground = colors[1],
                         background = colors[14]
                 ),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        'launch': ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
+                widget.Spacer(),
+                # orbed
+                widget.TextBox(
+                    text = "",
+                    font = "Iosevka_Nerd_Font",
+                    fontsize = 23,
+                    background = colors[14],
+                    foreground = colors[7],
+                    padding = 0
                 ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
-                widget.Systray(),
-                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
-                widget.QuickExit(),
+                widget.Net(
+                    background = colors[7],
+                    foreground = colors[14],
+                ),
+                widget.TextBox(
+                    text = "",
+                    font = "feather",
+                    fontsize = 23,
+                    background = colors[7],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                # orbed
+                widget.TextBox(
+                    text = "",
+                    font = "Iosevka_Nerd_Font",
+                    fontsize = 23,
+                    background = colors[14],
+                    foreground = colors[6],
+                    padding = 0
+                ),
+                widget.TextBox(
+                    text = "🕓",
+                    font = "feather",
+                    fontsize = 15,
+                    background = colors[6],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                widget.CPU(
+                    background = colors[6],
+                    foreground = colors[14],
+                ),
+                widget.TextBox(
+                    text = "",
+                    font = "feather",
+                    fontsize = 23,
+                    background = colors[6],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                # orbed
+                widget.TextBox(
+                    text = "",
+                    font = "Iosevka_Nerd_Font",
+                    fontsize = 23,
+                    background = colors[14],
+                    foreground = colors[5],
+                    padding = 0
+                ),
+                widget.TextBox(
+                    text = "🕓",
+                    font = "feather",
+                    fontsize = 15,
+                    background = colors[5],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                widget.Memory(
+                    background = colors[5],
+                    foreground = colors[14],
+                    format =' {MemUsed: .0f} MB '
+                ),
+                widget.TextBox(
+                    text = "",
+                    font = "feather",
+                    fontsize = 23,
+                    background = colors[5],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                # orbed
+                widget.TextBox(
+                    text = "",
+                    font = "Iosevka_Nerd_Font",
+                    fontsize = 23,
+                    background = colors[14],
+                    foreground = colors[4],
+                    padding = 0
+                ),
+                widget.Systray(
+                    background = colors[4],
+                    foreground = colors[14],
+                ),
+                widget.TextBox(
+                    text = "",
+                    font = "feather",
+                    fontsize = 23,
+                    background = colors[4],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                # orbed
+                widget.TextBox(
+                    text = "",
+                    font = "Iosevka_Nerd_Font",
+                    fontsize = 23,
+                    background = colors[14],
+                    foreground = colors[3],
+                    padding = 0
+                ),
+                widget.TextBox(
+                    text = "🕓",
+                    font = "feather",
+                    fontsize = 15,
+                    background = colors[3],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                widget.Clock(
+                    background = colors[3],
+                    foreground = colors[14],
+                    icons_size = 20,
+                    padding = 8
+                ),
+                widget.TextBox(
+                    text = "",
+                    font = "feather",
+                    fontsize = 23,
+                    background = colors[3],
+                    foreground = colors[14],
+                    padding = 0
+                ),
             ],
             24,
         ),
