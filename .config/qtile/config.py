@@ -190,7 +190,7 @@ screens = [
                         highlight_method = "block",
                         highlight_color = colors[1],
                         this_screen_border = colors[1],
-                        this_current_screen_border = colors[2],
+                        this_current_screen_border = colors[8],
                         foreground = colors[1],
                         background = colors[14]
                 ),
