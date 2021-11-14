@@ -1,3 +1,7 @@
+" Disable Background Color Erase (BCE) so that color schemes
+" work properly when Vim is used inside tmux and GNU screen.
+let &t_ut=''
+
 set number
 set mouse=a
 set numberwidth=1
@@ -44,12 +48,12 @@ Plug 'OmniSharp/omnisharp-vim'
 
 " Automatically import when save file
 " Format with goimport instead gofmt
-"let g:go_fmt_command = "goimports"
+" let g:go_fmt_command = "goimports"
 " Run to import all necessary libraries
 
 " Autocomplete, Use release bracnh (recommend)
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"
 " Terraform
 Plug 'hashivim/vim-terraform'
 " Plug 'juliosueiras/vim-terraform-completion'
