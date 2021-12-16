@@ -3,7 +3,7 @@
 let &t_ut=''
 
 set number
-set mouse=a
+"set mouse=a
 set numberwidth=1
 set clipboard=unnamed
 syntax on
@@ -37,45 +37,25 @@ Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 
-" Go
-Plug 'fatih/vim-go'
+" same as gitlens vscode
+Plug 'APZelos/blamer.nvim'
 
-" Godot
-"Plug 'habamax/vim-godot'
+" Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " C#
 Plug 'OmniSharp/omnisharp-vim'
 
-" Automatically import when save file
-" Format with goimport instead gofmt
-" let g:go_fmt_command = "goimports"
-" Run to import all necessary libraries
-
 " Autocomplete, Use release bracnh (recommend)
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "
 " Terraform
 Plug 'hashivim/vim-terraform'
-" Plug 'juliosueiras/vim-terraform-completion'
-
-" autocomplete
-" Plug 'sirver/ultisnips'
 
 call plug#end()
 
-" {{{ coc
-"let g:coc_global_extensions = [
-"    \ 'coc-git',
-"    \ 'coc-go',
-"    \]
-"    \ 'coc-highlight',
-"    \ 'coc-json',
-"    \ 'coc-yaml',
-"    \ 'coc-lists',
-"    \ 'coc-python',
-" }}}
-
 " Golang options
+let g:go_doc_popup_window = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_operators = 1
 "let g:go_highlight_build_constraints = 1
