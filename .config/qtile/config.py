@@ -302,6 +302,35 @@ screens = [
                     font = "Iosevka_Nerd_Font",
                     fontsize = 23,
                     background = colors[14],
+                    foreground = colors[11],
+                    padding = 0
+                ),
+                widget.BatteryIcon(
+                    background = colors[11],
+                    foreground = colors[14],
+                    icons_size = 20,
+                    padding = 8
+                ),
+                widget.Battery(
+                    background = colors[11],
+                    foreground = colors[14],
+                    icons_size = 20,
+                    padding = 8
+                ),
+                widget.TextBox(
+                    text = "",
+                    font = "feather",
+                    fontsize = 23,
+                    background = colors[11],
+                    foreground = colors[14],
+                    padding = 0
+                ),
+                # orbed
+                widget.TextBox(
+                    text = "",
+                    font = "Iosevka_Nerd_Font",
+                    fontsize = 23,
+                    background = colors[14],
                     foreground = colors[3],
                     padding = 0
                 ),

@@ -1,0 +1,2 @@
+ARandr (gui to configure monitors, xrandr)
+ - Create symlink to /etc/X11/xinit/xinitrc.d/99-arandr_multimonitor
