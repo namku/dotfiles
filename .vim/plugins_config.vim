@@ -11,6 +11,8 @@ let g:go_highlight_function_calls = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_variable_declarations = 1
 let g:go_highlight_variable_assignments = 1
+" fzf window position
+let g:fzf_preview_window = ['right:50%', 'ctrl-/']
 
 " gruvbox
 "let g:gruvbox_contrast_dark = "hard"

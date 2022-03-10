@@ -12,6 +12,8 @@ Plug 'sainnhe/gruvbox-material'
 "Plug 'sainnhe/everforest'
 
 " IDE
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
