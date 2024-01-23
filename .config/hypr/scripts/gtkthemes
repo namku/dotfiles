@@ -4,10 +4,13 @@
 
 ## Set GTK Themes, Icons, Cursor and Fonts
 
+#THEME='Arc-Dark'
 THEME='Arc-Dark'
-ICONS='Zafiro-Blue'
-FONT='Noto Sans 9'
-CURSOR='Qogirr'
+ICONS='buuf-nestort'
+#FONT='Noto Sans 9'
+FONT='notosans'
+#CURSOR='oreo_black_crsors'
+CURSOR='Adwaita'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
