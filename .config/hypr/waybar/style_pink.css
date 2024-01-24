@@ -27,7 +27,7 @@ window#waybar.hidden {
 
 /** ********** Battery ********** **/
 #battery {
-	background-color: #d6eadf;
+	background-color: #f9e2af;
 }
 
 #battery.charging {
@@ -53,7 +53,7 @@ window#waybar.hidden {
 }
 /** ***** language ***** **/
 #language {
-	background-color: #d6eadf;
+	background-color: #ffb7b2;
 }
 
 /** ********* wlogout ******** **/
@@ -68,22 +68,22 @@ window#waybar.hidden {
 
 /** ********** Clock ********** **/
 #clock {
-	background-color: #d6eadf;
+	background-color: #a6e3a1;
 }
 
 /** ********** CPU ********** **/
 #cpu {
-	background-color: #d6eadf;
+	background-color: #89dceb;
 }
 
 /** ********** Memory ********** **/
 #memory {
-	background-color: #d6eadf;
+	background-color: #eba0ac;
 }
 
 /** ********** Disk ********** **/
 #disk {
-	background-color: #d6eadf;
+	background-color: #b4befe;
 }
 
 /** ********** Tray ********** **/
@@ -121,7 +121,7 @@ window#waybar.hidden {
 
 /** ********** Pulseaudio ********** **/
 #pulseaudio {
-	background-color: #d6eadf;
+	background-color: #fab387;
 }
 
 #pulseaudio.bluetooth {
@@ -134,7 +134,7 @@ window#waybar.hidden {
 
 /** ********** Network ********** **/
 #network {
-	background-color: #d6eadf;
+	background-color: #89b4fa;
 }
 
 #network.disconnected,#network.disabled {
