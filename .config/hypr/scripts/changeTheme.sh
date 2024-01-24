@@ -9,6 +9,8 @@ case "$chosen" in
   "Retro") 
     killall swaybg && swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/retro.jpg
     sed -i 's/col.active_border.*$/col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg/g' /home/nham/.config/hypr/hyprland.conf
+    killall -9 waybar
+    /home/nham/.config/hypr/scripts/statusbar &
     ;;
   "Pink") 
     killall swaybg && swaybg --output '*' --mode fill --image ~/.config/hypr/wallpapers/wallpaper.png
